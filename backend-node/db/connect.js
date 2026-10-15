@@ -5,7 +5,7 @@ let isConnected = false;
 async function connectDB() {
   if (isConnected) return mongoose.connection;
 
-  const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/averra";
+  const uri = process.env.MONGODB_URI || "mongodb+srv://flipzartcare_db_user:AVcR0RYsXGg86SR1@cluster0.afwctik.mongodb.net/averra?appName=Cluster0";
 
   await mongoose.connect(uri, {
     // Connection pooling — reuse sockets instead of opening one per request.
